@@ -5,7 +5,9 @@ public class RegistroResumos {
     private String[] temas;
     private int total;
     private int proximo;
-
+/*
+já que tu fez duas listas com temas e resumos, poderia ter criado a classe resumo.
+ */
     public RegistroResumos(int numeroDeResumos) {
         this.resumos = new String[numeroDeResumos];
         this.temas = new String[numeroDeResumos];

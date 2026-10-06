@@ -22,6 +22,8 @@ public class RegistroTempoOnline {
         return tempoOnline >= tempoOnlineEsperado;
     }
 
+@Override
+
     public String toString() {
         return nomeDisciplina + " " + tempoOnline + "/" + tempoOnlineEsperado;
     }
