@@ -1,5 +1,15 @@
 package lab2;
+
+/**
+ * Classe de teste do sistema CoISA, ela cria objetos das outras classes
+ e imprime os resultados pra ver se tá tudo certo
+ */
 public class Coisa {
+
+    /**
+     * Método principal
+     *
+     */
     public static void main(String[] args) {
         registrarDescanso();
         System.out.println("-----");
@@ -9,6 +19,10 @@ public class Coisa {
         System.out.println("-----");
         registrarResumos();
     }
+
+    /**
+     * imprime se o aluno está cansado ou descansado
+     */
     public static void registrarDescanso() {
         Descanso descanso = new Descanso();
         System.out.println(descanso.getStatusGeral());
@@ -22,6 +36,10 @@ public class Coisa {
         descanso.defineNumeroSemanas(1);
         System.out.println(descanso.getStatusGeral());
     }
+
+    /**
+     * imprime se a meta foi atingida e o estado do registro.
+     */
     private static void registrarTempoOnline() {
         RegistroTempoOnline tempoLP2 = new RegistroTempoOnline("LP2", 30);
         tempoLP2.adicionaTempoOnline(10);
@@ -35,6 +53,10 @@ public class Coisa {
         RegistroTempoOnline tempoP2 = new RegistroTempoOnline("P2");
         System.out.println(tempoP2.toString());
     }
+
+    /**
+     * imprime se o aluno foi aprovado e o estado da disciplina.
+     */
     private static void controlarDisciplina() {
         Disciplina prog2 = new Disciplina("PROGRAMACAO 2");
         prog2.cadastraHoras(4);
@@ -46,6 +68,10 @@ public class Coisa {
         System.out.println(prog2.aprovado());
         System.out.println(prog2.toString());
     }
+
+    /**
+     * Testa a classe RegistroResumos e adiciona dois resumos e também imprime
+     */
     private static void registrarResumos() {
         RegistroResumos meusResumos = new RegistroResumos(100);  // 100 resumos
 
