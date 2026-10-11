@@ -21,6 +21,7 @@ public class Descanso {
 
     /**
      * Define o total de horas de descanso
+     * @param valor quantidade de horas de descanso
      */
     public void defineHorasDescanso(int valor) {
         this.horasDescanso = valor;
@@ -28,6 +29,7 @@ public class Descanso {
 
     /**
      * Define o número de semanas.
+     * @param valor quantidade de semanas
      */
     public void defineNumeroSemanas(int valor) {
         this.numeroSemanas = valor;
